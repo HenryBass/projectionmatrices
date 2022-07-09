@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js">
+    </script>
+</head>
+<body>
+    <h1>Projection Matrices</h1>
+    <p>Henry Bass, 2022</p><br>
+    
+    <label for="mmatrix">Enable Motion Matrix</label> <input type="checkbox" id="mmatrix" name="mmatrix" checked="true" style="width:10px">
+    
+    <script src="script.js"></script>
+    <br>
+    
+<pre class="matrix"> 
+Projection Matrix:
+
+[x, y, z] * <input id="px1" value="1"><input id="py1" value="0"><input id="pz1" value="0"> = [x, y]   
+   <input id="px2" value="0" ><input id="py2"  value="0.5"><input id="pz2"value="1">   
+    </pre>
+
+<pre class="matrix" id="motionmatrix"> 
+Motion Matrix:
+
+[x, y, z] * <input id="mx1" value="cos(t)"><input id="my1"value="-sin(t)"><input id="mz1"value="0"> = [x, y, z]
+<input id="mx2"value="sin(t)"><input id="my2"value="cos(t)"><input id="mz2"value="0">
+<input id="mx3"value="0"><input id="my3"value="0"><input id="mz3"value="1">
+    </pre>
+    </p>
+
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    font-family: monospace;
+    color: white;
+    margin: 0px;
+    background-color: black;
+    text-align: center;
+}
+
+canvas {
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+pre {
+    line-height: 0.7;
+    display: inline;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    
+    border: 1px solid;
+    width: 90px;
+    border-radius: 1px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
